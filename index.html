@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="">
+                <h2 class="heading">Let's get started!</h2>
+                <p class="para-text">Add your details (As per your registered records)</p>
+            </div>
+            <div class="question">
+                <label>Name</label><br>
+                <input type="text" id="input1" placeholder="Enter Name" oninput="updateProgressBar()">
+            </div>
+            <div class="question">
+                <label>Nature of Driving License</label><br>
+                <div class="radio-btn">
+                    <div class="label1">
+                        <input type="radio" name="radio1" id="radio1" value="radio1">
+                        <label>Private</label>
+                    </div>
+                    <div class="label2">
+                        <input type="radio" name="radio2" id="radio2" value="radio2">
+                        <label>Commercial</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <label>Type of Previous Driving License</label><br>
+                <div class="radio-btn">
+                    <div class="label3">
+                        <input type="radio" name="radio" id="radio3" value="radio3">
+                        <label>Paper Driving License</label>
+                    </div>
+                    <div class="label4">
+                        <input type="radio" name="radio" id="radio4" value="radio4">
+                        <label>Smart Driving License</label>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="save-btn">Back</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="">
+                <h2 class="heading">Let's get started!</h2>
+                <p class="para-text">Add your details (As per your registered records)</p>
+            </div>
+            <div class="question">
+                <label>Places where Driving License was Issued</label><br />
+                <input type="text" id="input2" placeholder="Enter Place Name" oninput="updateProgressBar()">
+            </div>
+            <div class="question">
+                <label>Issue Year of License</label><br />
+                <!-- <select id="select1">
+                    <option value="">Choose Issue Year of License</option>
+                    <option value="option1" class="option1">Option 1</option>
+                    <option value="option2" class="option2">Option 2</option>
+                </select> -->
+                <nav>
+                    <ul>
+                        <li class="Lev-1">
+                            Choose Issue Year of License
+                            <ul>
+                                <li class="option2">Option 1</li>
+                                <li class="option2">Option 1</li>
+                                <li class="option2">Option 1</li>
+                                <li class="option2">Option 1</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="question">
+                <label>Type of Previous Driving License</label><br />
+                <div class="select">
+                    <select id="standard-select">
+                      <option value="Option 1">Twitter </option>
+                      <option value="Option ">Facebook</option>
+                      <option value="Option 3">Reddit </option>
+                      <option value="Option 4">Youtube </option>
+                  
+                    </select>
+                  </div>
+            </div>
+            <div class="btn">
+                <button class="save-btn">Back</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
